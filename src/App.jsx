@@ -46,7 +46,7 @@ export default function App() {
             <h1 className='mt-10 mb-10 text-4xl font-bold text-purple-400'>Welcome back! Please Log In Below.</h1>
             <input onChange={(event) => {event.preventDefault(); setEmail(event.target.value);}} type="email" className="bg-gray-100 border border-gray-400 text-gray-800 text-sm rounded-lg p-2 w-2/4 sm:w-1/4" placeholder="name@email.com" required/>
             <button onClick={signIn}  disabled={!isEmailValid} className='px-4 py-2 bg-pink-300 hover:bg-pink-400 border-solid border-[1px] border-pink-600 ml-4 rounded-md'>→ Log In</button>
-          <p className="text-xs text-gray-300">Please check your email inbox, after clicking log in!</p>
+          <p className="text-sm mt-2 text-gray-400">Please check your email inbox, after clicking log in!</p>
           </div> 
       </>
     ) : (
