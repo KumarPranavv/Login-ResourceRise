@@ -52,7 +52,8 @@ export default function App() {
 <>
 <div className='container mt-20 text-center'>
   <h1 className='text-xl font-bold text-purple-400'>Email : {user.email}</h1>
-  <p>display things that are private to this email specific account!</p>
+  {/* <p>display things that are private to this email specific account!</p> */}
+  <button onClick={() => {window.location.href = "https://resourcerise.vercel.app"}} className='p-1 px-2 text-md bg-red-400 rounded-md text-white'>Successfully, click here to redirect!</button>
 </div>
 </>
     )
