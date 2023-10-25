@@ -54,6 +54,7 @@ export default function App() {
   <h1 className='text-xl font-bold text-purple-400'>Email : {user.email}</h1>
   {/* <p>display things that are private to this email specific account!</p> */}
   <button onClick={() => {window.location.href = "https://resourcerise.vercel.app"}} className='p-1 px-2 text-md bg-red-400 rounded-md text-white'>Successfully logged in to Resource Rise, click here to redirect!</button>
+  <p className="text-xs text-gray-300">Please check your email inbox, after clicking log in!</p>
 </div>
 </>
     )
