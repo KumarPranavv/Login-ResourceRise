@@ -46,6 +46,7 @@ export default function App() {
             <h1 className='mt-10 mb-10 text-4xl font-bold text-purple-400'>Welcome back! Please Log In Below.</h1>
             <input onChange={(event) => {event.preventDefault(); setEmail(event.target.value);}} type="email" className="bg-gray-100 border border-gray-400 text-gray-800 text-sm rounded-lg p-2 w-2/4 sm:w-1/4" placeholder="name@email.com" required/>
             <button onClick={signIn}  disabled={!isEmailValid} className='px-4 py-2 bg-pink-300 hover:bg-pink-400 border-solid border-[1px] border-pink-600 ml-4 rounded-md'>→ Log In</button>
+          <p className="text-sm mt-2 text-gray-400">Please check your email inbox, after clicking log in!</p>
           </div> 
       </>
     ) : (
@@ -54,7 +55,7 @@ export default function App() {
   <h1 className='text-xl font-bold text-purple-400'>Email : {user.email}</h1>
   {/* <p>display things that are private to this email specific account!</p> */}
   <button onClick={() => {window.location.href = "https://resourcerise.vercel.app"}} className='p-1 px-2 text-md bg-red-400 rounded-md text-white'>Successfully logged in to Resource Rise, click here to redirect!</button>
-  <p className="text-xs text-gray-300">Please check your email inbox, after clicking log in!</p>
+  
 </div>
 </>
     )
